@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StudyWithMSK - English</title>
+  <title>MSK Steps Learning - English</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,11 +27,9 @@
   <nav class="navbar">
     <div class="container">
       <a href="../index.html" class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-        <span>StudyWithMSK</span>
+        <img src="../assets/logo.png" alt="MSK Steps Learning Logo"
+          style="width: 40px; height: 40px; border-radius: 50%;">
+        <span>MSK Steps Learning</span>
       </a>
 
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
@@ -44,46 +42,35 @@
       </div>
 
       <button onclick="window.location.href='../contact.html'" class="btn btn-primary"
-        style="margin-left: 20px;">Contact Us</button>
+        style="margin-left: 20px;">Contact
+        Us</button>
     </div>
   </nav>
 
   <!-- Header Section -->
   <section class="container" style="padding: 4rem 1.5rem; text-align: center;">
-    <h1 class="text-3xl font-bold mb-4">StudyWith MSK - English</h1>
+    <h1 class="text-3xl font-bold mb-4">MSK Steps Learning - English</h1>
     <p style="max-width: 800px; margin: 0 auto 2rem; color: var(--text-light);">
-      Whatever you need for your studies, you will get it all here! 📚✨ I am Manpreet, your teacher. Many students feel
-      english is tough, but I will make it simple and interesting for you.
+      Improve your English skills with our comprehensive video lessons. We cover NCERT chapters, grammar, and
+      vocabulary. I am Manpreet, your teacher. Many students feel english is tough, but I will make it simple and
+      interesting for you.
     </p>
     <hr>
   </section>
 
   <!-- Main Content -->
   <section class="container" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 4rem;">
-    <div style="flex: 1; min-width: 300px;">
-      <div style="border-radius: 1rem; overflow: hidden; height: 100%; max-height: 400px;">
-        <img alt="studying" id="randomImage" style="width: 100%; height: 100%; object-fit: cover;">
-      </div>
-      <script>
-        // Unsplash Image Logic
-        const accessKey = "xTywOggZveeeBDvRpNnPQtOXJx-sLObKicpvNJB2VlY";
-        const topic = "kids are studying";
-
-        fetch(`https://api.unsplash.com/photos/random?query=${topic}&client_id=${accessKey}`)
-          .then(res => res.json())
-          .then(data => {
-            const imageUrl = `${data.urls.raw}&w=720&h=600&fit=crop`;
-            document.getElementById("randomImage").src = imageUrl;
-          })
-          .catch(err => console.error(err));
-      </script>
+    <div style="flex: 1; min-width: 300px; display: flex; align-items: center; justify-content: center;">
+      <img src="../assets/english_corner.png" alt="English Corner"
+        style="width: 100%; max-width: 500px; height: auto; border-radius: 1rem; box-shadow: var(--card-shadow);">
     </div>
 
     <div style="flex: 1.5; min-width: 300px;">
       <p class="mb-4">📖 Welcome to the English Learning Section!</p>
       <p class="mb-4">📚 On my YouTube channel, <a
           href="https://www.youtube.com/channel/UCwYG-y1hKPsmSZ4ybZe3JBg?sub_confirmation=1" target="_blank"
-          class="text-primary font-bold">StudyWith MSK</a>, I’ve made fun playlists to help you learn English easily.
+          class="text-primary font-bold">MSK Steps Learning</a>, I’ve made fun playlists to help you learn English
+        easily.
       </p>
 
       <div class="card" style="margin-bottom: 1.5rem;">
@@ -92,7 +79,7 @@
         <div style="margin-top: 1rem;">
           <a href="https://www.youtube.com/playlist?list=PL5os2MLAPP_gH0DjFx4hNbMq-WJOQYY3R" target="_blank"
             class="text-primary">Watch Honeycomb Playlist</a> |
-          <a href="../subpages/english.html" class="text-primary">View on Website</a>
+          <a href="subpages/english.html" class="text-primary">View on Website</a>
         </div>
       </div>
 
@@ -100,11 +87,11 @@
         <h3>Class 6</h3>
         <p><strong>The Honeysuckle Book:</strong> <a
             href="https://www.youtube.com/playlist?list=PL5os2MLAPP_g9jAHUFALqNbWgx-KvT7gc" target="_blank"
-            class="text-primary">Watch Playlist</a> | <a href="../subpages/english.html" class="text-primary">View on
+            class="text-primary">Watch Playlist</a> | <a href="subpages/english.html" class="text-primary">View on
             Website</a></p>
         <p style="margin-top: 0.5rem;"><strong>A Pact with the Sun:</strong> <a
             href="https://www.youtube.com/playlist?list=PL5os2MLAPP_guvScLpUVRK-s2-DwuI84f" target="_blank"
-            class="text-primary">Watch Playlist</a> | <a href="../subpages/english.html" class="text-primary">View on
+            class="text-primary">Watch Playlist</a> | <a href="subpages/english.html" class="text-primary">View on
             Website</a></p>
       </div>
 
@@ -129,14 +116,62 @@
     </script>
   </div>
 
+  <!-- Book Summaries Section -->
+  <section class="container" style="margin-bottom: 3rem;">
+    <h2 class="text-2xl font-bold mb-4">About the Books</h2>
+    <div
+      style="background: var(--bg-white); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05); margin-bottom: 2rem;">
+      <h3 class="text-xl font-bold mb-2">Honeycomb</h3>
+      <p style="color: var(--text-light); line-height: 1.6;">
+        "Honeycomb" is a delightful textbook that introduces students to the beauty of prose and poetry. It features
+        engaging stories that teach moral values, critical thinking, and empathy. Our video lessons cover every chapter
+        in detail, ensuring you grasp the core message and literary devices used.
+      </p>
+    </div>
+    <div style="background: var(--bg-white); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
+      <h3 class="text-xl font-bold mb-2">An Alien Hand</h3>
+      <p style="color: var(--text-light); line-height: 1.6;">
+        This supplementary reader is designed to encourage extensive reading. "An Alien Hand" includes fascinating tales
+        that expand on the themes found in Honeycomb, helping students improve their reading speed and comprehension
+        skills.
+      </p>
+    </div>
+  </section>
+
+  <!-- Educational Article Section -->
+  <section class="container" style="margin-bottom: 4rem;">
+    <h2 class="text-2xl font-bold mb-4">Tips for Mastering English</h2>
+    <ul
+      style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+      <li class="card">
+        <strong style="display: block; margin-bottom: 0.5rem; color: var(--primary-color);">📚 Read Daily</strong>
+        <p style="font-size: 0.9rem; color: var(--text-light);">Read at least one page of English text every day. It
+          could be a story, a news article, or a blog.</p>
+      </li>
+      <li class="card">
+        <strong style="display: block; margin-bottom: 0.5rem; color: var(--primary-color);">🗣️ Speak Up</strong>
+        <p style="font-size: 0.9rem; color: var(--text-light);">Try to speak in English with your friends or family.
+          Don't worry about making mistakes!</p>
+      </li>
+      <li class="card">
+        <strong style="display: block; margin-bottom: 0.5rem; color: var(--primary-color);">✍️ Write More</strong>
+        <p style="font-size: 0.9rem; color: var(--text-light);">Practice writing short paragraphs or summaries of the
+          stories you read.</p>
+      </li>
+    </ul>
+  </section>
+
+  <hr style="margin-bottom: 2rem;">
+
   <!-- Notes Section -->
   <section class="container mb-8">
+    <h2 class="text-2xl font-bold mb-4 text-center">Download Notes</h2>
     <div class="card-grid">
       <div class="card">
         <span style="font-size: 0.875rem; color: var(--text-light);">16 - Aug - 2025</span>
         <h2 style="margin-top: 0.5rem;">Class 7 Honeycomb Notes</h2>
         <p>Download all chapter notes as a .zip file.</p>
-        <a href="../files/HoneyCombBook.zip" download="HoneyComb Book Complete Folder" class="btn btn-primary"
+        <a href="files/HoneyCombBook.zip" download="HoneyComb Book Complete Folder" class="btn btn-primary"
           style="font-size: 0.9rem;">📥 Download Zip</a>
       </div>
 
@@ -144,7 +179,7 @@
         <span style="font-size: 0.875rem; color: var(--text-light);">16 - Aug - 2025</span>
         <h2 style="margin-top: 0.5rem;">Class 7 An Alien Hand Notes</h2>
         <p>Download all chapter notes as a .zip file.</p>
-        <a href="../files/AN%20ALIAN%20HAND%20CLASS%207.zip" download="AN ALIAN HAND CLASS 7" class="btn btn-primary"
+        <a href="files/AN%20ALIAN%20HAND%20CLASS%207.zip" download="AN ALIAN HAND CLASS 7" class="btn btn-primary"
           style="font-size: 0.9rem;">📥 Download Zip</a>
       </div>
     </div>
@@ -153,7 +188,9 @@
   <!-- Footer -->
   <footer>
     <div class="container text-center">
-      <p>&copy; 2025 StudyWithMSK. All rights reserved.</p>
+      <p>&copy; 2025 MSK Steps Learning. All rights reserved.<br>
+        <span style="font-size: 0.8rem; color: var(--text-light);">by MSK Step learning(MSK SLearning)</span>
+      </p>
     </div>
   </footer>
 

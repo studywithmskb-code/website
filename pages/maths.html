@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StudyWithMSK - Maths</title>
+  <title>MSK Steps Learning - Maths</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,11 +27,9 @@
   <nav class="navbar">
     <div class="container">
       <a href="../index.html" class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-        <span>StudyWithMSK</span>
+        <img src="../assets/logo.png" alt="MSK Steps Learning Logo"
+          style="width: 40px; height: 40px; border-radius: 50%;">
+        <span>MSK Steps Learning</span>
       </a>
 
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
@@ -50,34 +48,19 @@
 
   <!-- Header Section -->
   <section class="container" style="padding: 4rem 1.5rem; text-align: center;">
-    <h1 class="text-3xl font-bold mb-4">StudyWith MSK - Maths</h1>
+    <h1 class="text-3xl font-bold mb-4">MSK Steps Learning - Maths</h1>
     <p style="max-width: 800px; margin: 0 auto 2rem; color: var(--text-light);">
-      Welcome to the Maths Learning Section! 📚 Maths becomes easy when you know the tricks. Join me on <a
-        href="https://www.youtube.com/channel/UCwYG-y1hKPsmSZ4ybZe3JBg?sub_confirmation=1" target="_blank"
-        class="text-primary font-bold">StudyWith MSK</a>!
+      Welcome to the Maths section! Here you will find video solutions for Class 6 Maths NCERT chapters. We focus on
+      building a strong foundation with easy-to-understand explanations.
     </p>
     <hr>
   </section>
 
   <!-- Main Content -->
   <section class="container" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 4rem;">
-    <div style="flex: 1; min-width: 300px;">
-      <div style="border-radius: 1rem; overflow: hidden; height: 100%; max-height: 400px;">
-        <img alt="maths teacher" id="randomImage" style="width: 100%; height: 100%; object-fit: cover;">
-      </div>
-      <script>
-        // Unsplash Image Logic
-        const accessKey = "xTywOggZveeeBDvRpNnPQtOXJx-sLObKicpvNJB2VlY";
-        const topic = "teachers are teaching";
-
-        fetch(`https://api.unsplash.com/photos/random?query=${topic}&client_id=${accessKey}`)
-          .then(res => res.json())
-          .then(data => {
-            const imageUrl = `${data.urls.raw}&w=720&h=600&fit=crop`;
-            document.getElementById("randomImage").src = imageUrl;
-          })
-          .catch(err => console.error(err));
-      </script>
+    <div style="flex: 1; min-width: 300px; display: flex; align-items: center; justify-content: center;">
+      <img src="../assets/math_corner.png" alt="Math Corner"
+        style="width: 100%; max-width: 500px; height: auto; border-radius: 1rem; box-shadow: var(--card-shadow);">
     </div>
 
     <div style="flex: 1.5; min-width: 300px;">
@@ -85,16 +68,71 @@
 
       <div class="card" style="margin-bottom: 1.5rem;">
         <h3>Class 6 Playlists</h3>
-        <ul style="list-style: disc; margin-left: 1.5rem; color: var(--text-light); margin-top: 0.5rem;">
-          <li style="margin-bottom: 0.5rem;"><strong>Chapter 1:</strong> <a
-              href="https://www.youtube.com/playlist?list=PL5os2MLAPP_iWwoyQTo53qKcoj6_L5Azz" class="text-primary"
-              target="_blank">Watch Playlist</a></li>
-          <li style="margin-bottom: 0.5rem;"><strong>Chapter 2:</strong> <a
-              href="https://www.youtube.com/playlist?list=PL5os2MLAPP_iUIp8mHp5JvkzmVjVqjFRZ" class="text-primary"
-              target="_blank">Watch Playlist</a></li>
-          <li><strong>Chapter 3:</strong> <a
-              href="https://www.youtube.com/playlist?list=PL5os2MLAPP_h_kDX5j0YpxsTdgdyNvVtA" class="text-primary"
-              target="_blank">Watch Playlist</a></li>
+        <ul style="list-style: none; padding: 0;">
+          <li
+            style="margin-bottom: 2rem; background: var(--bg-white); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
+            <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 1rem;">
+              <div>
+                <strong style="font-size: 1.25rem; display: block; margin-bottom: 0.5rem;">Chapter 1: Knowing our
+                  Numbers</strong>
+                <p
+                  style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem; max-width: 600px; line-height: 1.6;">
+                  Counting things is easy for us now. We can count objects in large numbers, for example, the number of
+                  students in the school, and represent them through numerals. We can also communicate large numbers
+                  using suitable number names.
+                </p>
+              </div>
+              <div style="display: flex; gap: 0.5rem; flex-direction: column;">
+                <a href="../files/CH. 1.pdf" download="Chapter 1 - Knowing our Numbers" class="btn btn-primary"
+                  style="padding: 0.5rem 1rem; font-size: 0.9rem;">📥 Download Notes</a>
+                <a href="https://www.youtube.com/playlist?list=PL5os2MLAPP_iWwoyQTo53qKcoj6_L5Azz" class="text-primary"
+                  target="_blank" style="text-align: center; font-size: 0.9rem;">Watch Playlist &rarr;</a>
+              </div>
+            </div>
+          </li>
+
+          <li
+            style="margin-bottom: 2rem; background: var(--bg-white); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
+            <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 1rem;">
+              <div>
+                <strong style="font-size: 1.25rem; display: block; margin-bottom: 0.5rem;">Chapter 2: Whole
+                  Numbers</strong>
+                <p
+                  style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem; max-width: 600px; line-height: 1.6;">
+                  As we know, we use 1, 2, 3, 4,... when we begin to count. They come naturally when we start counting.
+                  Hence, mathematicians call the counting numbers as Natural numbers.
+                </p>
+              </div>
+              <div style="display: flex; gap: 0.5rem; flex-direction: column;">
+                <a href="../files/CH. 2.pdf" download="Chapter 2 - Whole Numbers" class="btn btn-primary"
+                  style="padding: 0.5rem 1rem; font-size: 0.9rem;">📥 Download Notes</a>
+                <a href="https://www.youtube.com/playlist?list=PL5os2MLAPP_iUIp8mHp5JvkzmVjVqjFRZ" class="text-primary"
+                  target="_blank" style="text-align: center; font-size: 0.9rem;">Watch Playlist &rarr;</a>
+              </div>
+            </div>
+          </li>
+
+          <li
+            style="margin-bottom: 2rem; background: var(--bg-white); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
+            <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 1rem;">
+              <div>
+                <strong style="font-size: 1.25rem; display: block; margin-bottom: 0.5rem;">Chapter 3: Playing with
+                  Numbers</strong>
+                <p
+                  style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1rem; max-width: 600px; line-height: 1.6;">
+                  Ramesh has 6 marbles with him. He wants to arrange them in rows in such a way that each row has the
+                  same number of marbles. He arranges them in the following ways and matches the total number of
+                  marbles.
+                </p>
+              </div>
+              <div style="display: flex; gap: 0.5rem; flex-direction: column;">
+                <a href="../files/CH. 3.pdf" download="Chapter 3 - Playing with Numbers" class="btn btn-primary"
+                  style="padding: 0.5rem 1rem; font-size: 0.9rem;">📥 Download Notes</a>
+                <a href="https://www.youtube.com/playlist?list=PL5os2MLAPP_h_kDX5j0YpxsTdgdyNvVtA" class="text-primary"
+                  target="_blank" style="text-align: center; font-size: 0.9rem;">Watch Playlist &rarr;</a>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
 
@@ -106,6 +144,65 @@
           data-count="default"></div>
       </div>
     </div>
+  </section>
+
+  <!-- Divider -->
+  <hr style="margin: 2rem 0; opacity: 0.5;">
+
+  <!-- Tips Section -->
+  <section class="container" style="margin-bottom: 4rem;">
+    <h2 class="text-2xl font-bold mb-4">Tips to Score Good Marks in Maths</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+      <div class="card" style="border-left: 5px solid var(--primary-color);">
+        <h3 style="margin-bottom: 0.5rem; color: var(--text-dark);">1. Understand, Don't Memorize</h3>
+        <p style="font-size: 0.95rem; color: var(--text-light);">Maths is about logic. Instead of memorizing steps, try
+          to understand <em>why</em> a formula works. Once you get the concept, solving problems becomes a game!</p>
+      </div>
+      <div class="card" style="border-left: 5px solid var(--secondary-color);">
+        <h3 style="margin-bottom: 0.5rem; color: var(--text-dark);">2. Practice, Practice, Practice</h3>
+        <p style="font-size: 0.95rem; color: var(--text-light);">Mathematics is a skill, like swimming or coding. The
+          more you practice, the better you get. Solve at least 5 different types of problems daily.</p>
+      </div>
+      <div class="card" style="border-left: 5px solid var(--accent-color);">
+        <h3 style="margin-bottom: 0.5rem; color: var(--text-dark);">3. Clear Your Doubts</h3>
+        <p style="font-size: 0.95rem; color: var(--text-light);">Never let a doubt stay in your mind. If you are stuck,
+          ask your teacher or watch the explanations again. A small doubt today can become a big gap tomorrow.</p>
+      </div>
+      <div class="card" style="border-left: 5px solid #22c55e;">
+        <h3 style="margin-bottom: 0.5rem; color: var(--text-dark);">4. Maintain a Formula Book</h3>
+        <p style="font-size: 0.95rem; color: var(--text-light);">Keep a small notebook just for formulas and key
+          concepts. Review it before solving problems or going for an exam.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Did You Know Section -->
+  <section class="container"
+    style="margin-bottom: 4rem; background-color: #e0e7ff; padding: 2rem; border-radius: 1rem;">
+    <h2 class="text-2xl font-bold mb-4" style="color: var(--primary-color);">Did You Know? (Maths Edition) 🧠</h2>
+    <ul style="list-style-type: disc; padding-left: 1.5rem; color: var(--text-dark); line-height: 1.8;">
+      <li><strong>Zero (0)</strong> is the only number that cannot be represented in Roman numerals.</li>
+      <li>The word <strong>"hundred"</strong> comes from the old Norse term "hundrath", which actually means 120, not
+        100!</li>
+      <li>A <strong>"jiffy"</strong> is an actual unit of time. It means 1/100th of a second.</li>
+      <li>If you shuffle a deck of cards properly, it's likely that the exact order of cards you get has never existed
+        before in the history of the universe.</li>
+    </ul>
+  </section>
+
+  <!-- Educational Article Section -->
+  <section class="container" style="margin-bottom: 4rem;">
+    <h2 class="text-2xl font-bold mb-4">Why is Learning Maths Important?</h2>
+    <p style="color: var(--text-light); line-height: 1.6; margin-bottom: 1rem;">
+      Mathematics is often called the universal language. It is not just about numbers and equations; it is a way of
+      thinking and solving problems. Learning maths helps build logical reasoning and analytical skills that are
+      essential for everyday life.
+    </p>
+    <p style="color: var(--text-light); line-height: 1.6;">
+      From calculating expenses to understanding scientific concepts, maths is everywhere. At <strong>MSK Steps
+        Learning</strong>, we focus on visualizing these concepts so you don't just memorize formulas, but truly
+      understand how they work.
+    </p>
   </section>
 
   <hr>
@@ -122,7 +219,9 @@
   <!-- Footer -->
   <footer>
     <div class="container text-center">
-      <p>&copy; 2025 StudyWithMSK. All rights reserved.</p>
+      <p>&copy; 2025 MSK Steps Learning. All rights reserved.<br>
+        <span style="font-size: 0.8rem; color: var(--text-light);">by MSK Step learning(MSK SLearning)</span>
+      </p>
     </div>
   </footer>
 
