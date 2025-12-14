@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyWithMSK - Maths</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Scripts -->
+  <script src="https://apis.google.com/js/platform.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5036104597450648"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span>StudyWithMSK</span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="english.html">English</a>
+        <a href="maths.html" class="active">Maths</a>
+        <a href="computer.html">Computer</a>
+      </div>
+
+      <button onclick="window.location.href='../contact.html'" class="btn btn-primary"
+        style="margin-left: 20px;">Contact Us</button>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <section class="container" style="padding: 4rem 1.5rem; text-align: center;">
+    <h1 class="text-3xl font-bold mb-4">StudyWith MSK - Maths</h1>
+    <p style="max-width: 800px; margin: 0 auto 2rem; color: var(--text-light);">
+      Welcome to the Maths Learning Section! 📚 Maths becomes easy when you know the tricks. Join me on <a
+        href="https://www.youtube.com/channel/UCwYG-y1hKPsmSZ4ybZe3JBg?sub_confirmation=1" target="_blank"
+        class="text-primary font-bold">StudyWith MSK</a>!
+    </p>
+    <hr>
+  </section>
+
+  <!-- Main Content -->
+  <section class="container" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 4rem;">
+    <div style="flex: 1; min-width: 300px;">
+      <div style="border-radius: 1rem; overflow: hidden; height: 100%; max-height: 400px;">
+        <img alt="maths teacher" id="randomImage" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <script>
+        // Unsplash Image Logic
+        const accessKey = "xTywOggZveeeBDvRpNnPQtOXJx-sLObKicpvNJB2VlY";
+        const topic = "teachers are teaching";
+
+        fetch(`https://api.unsplash.com/photos/random?query=${topic}&client_id=${accessKey}`)
+          .then(res => res.json())
+          .then(data => {
+            const imageUrl = `${data.urls.raw}&w=720&h=600&fit=crop`;
+            document.getElementById("randomImage").src = imageUrl;
+          })
+          .catch(err => console.error(err));
+      </script>
+    </div>
+
+    <div style="flex: 1.5; min-width: 300px;">
+      <p class="mb-4">I have created dedicated playlists to help students learn Maths in a simple and engaging way.</p>
+
+      <div class="card" style="margin-bottom: 1.5rem;">
+        <h3>Class 6 Playlists</h3>
+        <ul style="list-style: disc; margin-left: 1.5rem; color: var(--text-light); margin-top: 0.5rem;">
+          <li style="margin-bottom: 0.5rem;"><strong>Chapter 1:</strong> <a
+              href="https://www.youtube.com/playlist?list=PL5os2MLAPP_iWwoyQTo53qKcoj6_L5Azz" class="text-primary"
+              target="_blank">Watch Playlist</a></li>
+          <li style="margin-bottom: 0.5rem;"><strong>Chapter 2:</strong> <a
+              href="https://www.youtube.com/playlist?list=PL5os2MLAPP_iUIp8mHp5JvkzmVjVqjFRZ" class="text-primary"
+              target="_blank">Watch Playlist</a></li>
+          <li><strong>Chapter 3:</strong> <a
+              href="https://www.youtube.com/playlist?list=PL5os2MLAPP_h_kDX5j0YpxsTdgdyNvVtA" class="text-primary"
+              target="_blank">Watch Playlist</a></li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
+        <button class="btn btn-primary"
+          onclick="window.open('https://www.youtube.com/channel/UCwYG-y1hKPsmSZ4ybZe3JBg?sub_confirmation=2', '_blank')">Subscribe
+          on YouTube</button>
+        <div class="g-ytsubscribe" data-channelid="UCwYG-y1hKPsmSZ4ybZe3JBg" data-layout="default" data-theme="dark"
+          data-count="default"></div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Ads -->
+  <div class="container text-center mb-8">
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6t+ed+2i-1n-4w"
+      data-ad-client="ca-pub-5036104597450648" data-ad-slot="9830376029"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 StudyWithMSK. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Global JS -->
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
