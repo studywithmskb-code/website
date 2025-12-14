@@ -42,206 +42,495 @@
       </div>
 
       <button onclick="window.location.href='../contact.html'" class="btn btn-primary"
-        style="margin-left: 20px;">Contact
-        Us</button>
+        style="margin-left: 20px;">Contact Us</button>
     </div>
   </nav>
 
   <!-- Header Section -->
-  <section class="container" style="padding: 4rem 1.5rem; text-align: center;">
-    <h1 class="text-3xl font-bold mb-4">MSK Wise Computers</h1>
-    <p style="max-width: 800px; margin: 0 auto 2rem; color: var(--text-light);">
-      Welcome to MSK Wise Computers! 💻 Here we dive deep into the world of technology, fixing real-world PC problems,
-      learning useful software skills, and exploring the future of AI.
-    </p>
-    <a href="https://www.youtube.com/@MSKWisecomputers" target="_blank" class="btn btn-primary">Subscribe Channel</a>
-    <hr>
-  </section>
-
-  <!-- Tech Corner Section -->
-  <section class="container" style="margin-bottom: 3rem;">
-    <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-      <img src="../assets/tech_logo.png" alt="MSK Wise Computers Tech Logo"
-        style="width: 150px; margin-bottom: 1.5rem; filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.3));">
-      <h2 class="text-3xl font-bold mb-4">Welcome to the Tech Corner</h2>
-      <p style="max-width: 800px; margin: 0 auto 2rem; color: var(--text-light); line-height: 1.6;">
-        In today's digital age, computer literacy is a superpower. At <strong>MSK Wise Computers</strong>, we go beyond
-        basic tutorials. We dive deep into solving real-world PC problems, exploring creative coding projects like
-        building your own AI, and mastering essential software like MS Office. Whether you are a tech enthusiast or just
-        starting out, there is something here for you.
+  <section class="container" style="padding: 4rem 1.5rem;">
+    <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
+        <img src="../assets/tech_logo.png" alt="Computer Tech Logo"
+          style="width: 120px; height: 120px; object-fit: contain;">
+      </div>
+      <h1 class="text-3xl font-bold mb-4">MSK Wise Computers</h1>
+      <p style="color: var(--text-light); margin-bottom: 2rem;">
+        Dive into the world of technology! Here you will find tutorials on Python programming, creating AI assistants,
+        mastering essential software, and uncovering Windows secrets.
       </p>
     </div>
   </section>
 
-  <!-- Content List -->
+  <!-- Playlists Section -->
+  <section class="container" style="margin-bottom: 4rem;">
+    <h2 class="text-2xl font-bold mb-4" style="text-align: center; color: var(--text-dark);">Our Playlists</h2>
+    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <button onclick="openSelectionModal('python')" class="btn btn-primary"
+        style="background-color: #3776ab; border-color: #3776ab;">Python Series</button>
+      <button onclick="openSelectionModal('jarvis')" class="btn btn-primary"
+        style="background-color: #10b981; border-color: #10b981;">Jarvis Series</button>
+      <a href="https://www.youtube.com/playlist?list=PLKqbY-udh9zX0jXTA67juUX6SgNmXk0hJ" target="_blank"
+        class="btn btn-primary" style="background-color: #f59e0b; border-color: #f59e0b;">Storage Tricks</a>
+      <a href="https://www.youtube.com/playlist?list=PLKqbY-udh9zUXJMYZZ9-qK-8e0Rch78TU" target="_blank"
+        class="btn btn-primary" style="background-color: #6366f1; border-color: #6366f1;">Tech Extras</a>
+    </div>
+  </section>
+
+  <!-- Full Video Feed -->
   <section class="container" style="margin-bottom: 4rem;">
 
-    <!-- Item 1 (Python Series - Dec 2025) -->
-    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 6rem; align-items: start;">
+    <!-- 1. Python Day 7 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
       <div style="flex: 1; min-width: 300px;">
-        <div class="video-container"
-          style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 0.5rem; box-shadow: var(--card-shadow); background: #f3f4f6; display: flex; align-items: center; justify-content: center;">
-          <div style="text-align: center; padding: 2rem;">
-            <span style="font-size: 3rem;">🐍</span>
-            <p style="color: var(--text-light); margin-top: 1rem;">Python Learning Series</p>
-          </div>
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=e2V5-ApEWNY">
+          <!-- Video will be loaded here by script.js -->
         </div>
       </div>
       <div style="flex: 1; min-width: 300px;">
-        <div style="flex: 0 0 200px; margin-bottom: 0.5rem;">
-          <span style="font-weight: 600; color: var(--text-dark);">Series</span>
-          <div style="font-size: 0.875rem; color: var(--text-light);">Dec 2025</div>
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--primary-color);">Python Series</span> • 25 Dec 2025
         </div>
-        <div style="flex: 1;">
-          <h2 class="text-2xl mb-2">Python Learning Series</h2>
-          <p class="mb-4" style="line-height: 1.6;">
-            Start your programming journey with Python! From "Day 0" installation to Operators and Variables. This
-            series is designed for absolute beginners to master Python step-by-step.
-          </p>
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="subpages/python.html" class="text-primary font-bold">View Series on Website &rarr;</a>
-          </div>
+        <h2 class="text-2xl mb-2">Day 7 | Operators in Python | Must Watch</h2>
+        <p class="mb-4">Very important topic covering various operators in Python.</p>
+        <div style="margin-bottom: 0.5rem;">
+          <a href="https://drive.google.com/uc?export=download&id=1gM68KKaSu1s2gUY_tTAg8g8W-n3I1-nZ" download
+            style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.25rem; background-color: #2563eb; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; font-weight: 500;">
+            Download Materials 📥
+          </a>
         </div>
-      </div>
-    </div>
-
-    <!-- Item 2 (Jarvis Series - Nov 2025) -->
-    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 6rem; align-items: start;">
-      <div style="flex: 1; min-width: 300px;">
-        <div class="video-container"
-          style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 0.5rem; box-shadow: var(--card-shadow);">
-          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            src="https://www.youtube.com/embed/videoseries?list=PLKqbY-udh9zUHLG2zO3VwMI64EozjR8Xj" frameborder="0"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-      <div style="flex: 1; min-width: 300px;">
-        <div style="flex: 0 0 200px; margin-bottom: 0.5rem;">
-          <span style="font-weight: 600; color: var(--text-dark);">Series</span>
-          <div style="font-size: 0.875rem; color: var(--text-light);">Nov 2025</div>
-        </div>
-        <div style="flex: 1;">
-          <h2 class="text-2xl mb-2">Creating AI Assistant like Jarvis</h2>
-          <p class="mb-4" style="line-height: 1.6;">
-            Build a voice-activated AI assistant from scratch! 10+ Videos covering Setup, Chatbot logic, Realtime
-            Search, Speech-to-Text, GUI, and the final Main.py breakdown.
-          </p>
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="subpages/JarvisAI.html" class="text-primary font-bold">View Playlist on Website &rarr;</a>
-          </div>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem; align-items: start;">
+          <div
+            style="font-size: 0.75rem; background: #eab308; color: white; display: inline-block; padding: 2px 8px; border-radius: 4px;">
+            Scheduled</div>
+          <a href="https://youtu.be/e2V5-ApEWNY" target="_blank" class="text-primary font-bold"
+            style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
         </div>
       </div>
     </div>
 
-    <!-- Item 3 (Windows Secrets - Nov 2025) -->
-    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 6rem; align-items: start;">
+    <!-- 2. Python Day 6 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
       <div style="flex: 1; min-width: 300px;">
-        <div class="video-container"
-          style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 0.5rem; box-shadow: var(--card-shadow);">
-          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            src="https://www.youtube.com/embed/ScDCw2uC9TQ" frameborder="0" allowfullscreen></iframe>
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=FpxLiXalpY8">
         </div>
       </div>
       <div style="flex: 1; min-width: 300px;">
-        <div style="flex: 0 0 200px; margin-bottom: 0.5rem;">
-          <span style="font-weight: 600; color: var(--text-dark);">Video</span>
-          <div style="font-size: 0.875rem; color: var(--text-light);">20 Nov 2025</div>
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--primary-color);">Python Series</span> • 19 Dec 2025
+        </div>
+        <h2 class="text-2xl mb-2">Day 6 | Variable Explanation | User Input</h2>
+        <p class="mb-4">Part 2 of variables and how to take input from user.</p>
+        <div style="margin-bottom: 0.5rem;">
+          <a href="https://drive.google.com/uc?export=download&id=1KGcrU6qns0epUpyGOgkAeOocQ5aIEoOn" download
+            style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.25rem; background-color: #2563eb; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; font-weight: 500;">
+            Download Materials 📥
+          </a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem; align-items: start;">
+          <div
+            style="font-size: 0.75rem; background: #eab308; color: white; display: inline-block; padding: 2px 8px; border-radius: 4px;">
+            Scheduled</div>
+          <a href="https://youtu.be/FpxLiXalpY8" target="_blank" class="text-primary font-bold"
+            style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Python Day 5 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=5iJzTU2UOrM">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--primary-color);">Python Series</span> • 16 Dec 2025
+        </div>
+        <h2 class="text-2xl mb-2">Day 5 | Variables Explained 🔥📦 (Part-1)</h2>
+        <p class="mb-4">Understanding the core concept of variables in Python.</p>
+        <div style="margin-bottom: 0.5rem;">
+          <a href="https://drive.google.com/uc?export=download&id=17Uf-SEC2hh9LehN4WYWtA1vCkHfm8WHe" download
+            style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.25rem; background-color: #2563eb; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; font-weight: 500;">
+            Download Materials 📥
+          </a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem; align-items: start;">
+          <div
+            style="font-size: 0.75rem; background: #eab308; color: white; display: inline-block; padding: 2px 8px; border-radius: 4px;">
+            Scheduled</div>
+          <a href="https://youtu.be/5iJzTU2UOrM" target="_blank" class="text-primary font-bold"
+            style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Python Day 3 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=mhn5gCXiC9U">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--primary-color);">Python Series</span> • 13 Dec 2025
+        </div>
+        <h2 class="text-2xl mb-2">Day 3 | Escape Sequence Characters Explained 😱🔥</h2>
+        <p class="mb-4">Print Function Part-3. Mastering escape sequences.</p>
+        <div style="margin-bottom: 0.5rem;">
+          <a href="https://drive.google.com/uc?export=download&id=1udUI0dfALkK_IR1RoxA5BnGXZOTVRzDc" download
+            style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.25rem; background-color: #2563eb; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; font-weight: 500;">
+            Download Materials 📥
+          </a>
+        </div>
+        <a href="https://youtu.be/mhn5gCXiC9U" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 5. Python Day 4 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=T35OHWyvcEk">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--primary-color);">Python Series</span> • 12 Dec 2025
+        </div>
+        <h2 class="text-2xl mb-2">Day 4 | Comments Explained 😇📌</h2>
+        <p class="mb-4">Single & Multi-line Comments in Python.</p>
+        <div style="margin-bottom: 0.5rem;">
+          <a href="https://drive.google.com/uc?export=download&id=122N_HuVuKoKjtHn6mjTdIoJuaPUE6XTC" download
+            style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.25rem; background-color: #2563eb; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; font-weight: 500;">
+            Download Materials 📥
+          </a>
+        </div>
+        <a href="https://youtu.be/T35OHWyvcEk" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 6. Python Day 2 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=p-KnSfRhfxU">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--primary-color);">Python Series</span> • 7 Dec 2025
+        </div>
+        <h2 class="text-2xl mb-2">Day 2 | Python PRINT() Advanced Tricks</h2>
+        <p class="mb-4">Super Easy Guide p2 of print func.</p>
+        <div style="margin-bottom: 0.5rem;">
+          <a href="https://drive.google.com/uc?export=download&id=1k5q3z9VZ0OiKbbeMTDm-DqTNH4oduJ8V" download
+            style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.25rem; background-color: #2563eb; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; font-weight: 500;">
+            Download Materials 📥
+          </a>
+        </div>
+        <a href="https://youtu.be/p-KnSfRhfxU" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 7. Python Day 1 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=9dopr-YcaFA">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--primary-color);">Python Series</span> • 29 Nov 2025
+        </div>
+        <h2 class="text-2xl mb-2">Day 1 | Writing Our First Program in Python ✨</h2>
+        <p class="mb-4">Installing antigravity Module. Your first step in coding!</p>
+        <div style="margin-bottom: 0.5rem;">
+          <a href="https://drive.google.com/uc?export=download&id=1QHHIF-xVpeqJ4_vmYKGlN6QUnGT_91ZB" download
+            style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.25rem; background-color: #2563eb; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; font-weight: 500;">
+            Download Materials 📥
+          </a>
+        </div>
+        <a href="https://youtu.be/9dopr-YcaFA" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 8. Python Day 0 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=Hltkxgfij14">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--primary-color);">Python Series</span> • 27 Nov 2025
+        </div>
+        <h2 class="text-2xl mb-2">Day 0 | Python Complete Starting Guide 🚀</h2>
+        <p class="mb-4">What is Python? How to Install Python? (Beginner Friendly)</p>
+        <a href="https://youtu.be/Hltkxgfij14" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 9. Jarvis MAIN.py -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=IdDmsoyHcbU">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--secondary-color);">Jarvis Series</span> • 20 Nov 2025
+        </div>
+        <h2 class="text-2xl mb-2">MAIN.py Full Breakdown | Final Jarvis AI File</h2>
+        <p class="mb-4">The final piece of the Jarvis AI puzzle. No Errors Ever!</p>
+        <a href="https://youtu.be/IdDmsoyHcbU" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 10. Top 5 Windows Secrets -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=ScDCw2uC9TQ">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--text-dark);">Video</span> • 20 Nov 2025
         </div>
         <h2 class="text-2xl mb-2">Top 5 Windows Secrets Nobody Shows You!</h2>
-        <p class="mb-4" style="line-height: 1.6;">
-          Discover hidden features and tricks in Windows that can boost your productivity and change the way you use
-          your computer.
-        </p>
-        <a href="https://youtu.be/ScDCw2uC9TQ" target="_blank" class="text-primary font-bold">Watch Video on YT
-          &rarr;</a>
+        <p class="mb-4">Hidden features to boost your productivity.</p>
+        <a href="https://youtu.be/ScDCw2uC9TQ" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
       </div>
     </div>
 
-    <!-- Item 4 (Explorer Tips - Oct 2025) -->
-    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 6rem; align-items: start;">
+    <!-- 11. Jarvis GUY -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
       <div style="flex: 1; min-width: 300px;">
-        <div class="video-container"
-          style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 0.5rem; box-shadow: var(--card-shadow);">
-          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            src="https://www.youtube.com/embed/hNUb1EH6bhc" frameborder="0" allowfullscreen></iframe>
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=-s8T83O-rEg">
         </div>
       </div>
       <div style="flex: 1; min-width: 300px;">
-        <div style="flex: 0 0 200px; margin-bottom: 0.5rem;">
-          <span style="font-weight: 600; color: var(--text-dark);">Video</span>
-          <div style="font-size: 0.875rem; color: var(--text-light);">7 Oct 2025</div>
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--secondary-color);">Jarvis Series</span> • 14 Nov 2025
+        </div>
+        <h2 class="text-2xl mb-2">Creating the Next File of Jarvis (GUY)</h2>
+        <p class="mb-4">Building the GUI for Jarvis.</p>
+        <a href="https://youtu.be/-s8T83O-rEg" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 12. Jarvis TTS -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=6VL8x18g6SM">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--secondary-color);">Jarvis Series</span> • 8 Nov 2025
+        </div>
+        <h2 class="text-2xl mb-2">Creating the Next File of Jarvis TTS.py</h2>
+        <p class="mb-4">Text-to-Speech implementation explained.</p>
+        <a href="https://youtu.be/6VL8x18g6SM" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 13. Windows Explorer Tips -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=hNUb1EH6bhc">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--text-dark);">Video</span> • 7 Oct 2025
         </div>
         <h2 class="text-2xl mb-2">10 Secret Windows File Explorer Tips & Tricks</h2>
-        <p class="mb-4" style="line-height: 1.6;">
-          Unlock hidden features in File Explorer! These tips will help you navigate and manage your files faster than
-          ever before.
-        </p>
-        <a href="https://youtu.be/hNUb1EH6bhc" target="_blank" class="text-primary font-bold">Watch Video on YT
-          &rarr;</a>
+        <p class="mb-4">Unlock hidden features in File Explorer.</p>
+        <a href="https://youtu.be/hNUb1EH6bhc" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
       </div>
     </div>
 
-    <!-- Item 5 (Unlimited Storage - Sept 2025) -->
-    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 6rem; align-items: start;">
+    <!-- 14. Jarvis Part 6 (Speech) -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
       <div style="flex: 1; min-width: 300px;">
-        <div class="video-container"
-          style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 0.5rem; box-shadow: var(--card-shadow);">
-          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            src="https://www.youtube.com/embed/CLHycQfLQ0c" frameborder="0" allowfullscreen></iframe>
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=BrQ0EHmXmKM">
         </div>
       </div>
       <div style="flex: 1; min-width: 300px;">
-        <div style="flex: 0 0 200px; margin-bottom: 0.5rem;">
-          <span style="font-weight: 600; color: var(--text-dark);">Video</span>
-          <div style="font-size: 0.875rem; color: var(--text-light);">7 Sept 2025</div>
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--secondary-color);">Jarvis Series</span> • 18 Sept 2025
         </div>
-        <h2 class="text-2xl mb-2">Unlimited Storage Using Google Drive in Your App</h2>
-        <p class="mb-4" style="line-height: 1.6;">
-          Learn how to use Google Drive API to get unlimited storage for your Python applications. Full source code
-          included!
-        </p>
-        <a href="https://youtu.be/CLHycQfLQ0c" target="_blank" class="text-primary font-bold">Watch Video on YT
-          &rarr;</a>
+        <h2 class="text-2xl mb-2">Part 6 | Creating Speech-to-Text File</h2>
+        <p class="mb-4">Adding voice recognition capabilities.</p>
+        <a href="https://youtu.be/BrQ0EHmXmKM" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
       </div>
     </div>
 
-    <!-- Item 6 (Fix This - Jul 2025) -->
-    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 6rem; align-items: start;">
+    <!-- 15. Unlimited Storage -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
       <div style="flex: 1; min-width: 300px;">
-        <div class="video-container"
-          style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 0.5rem; box-shadow: var(--card-shadow);">
-          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            src="https://www.youtube.com/embed/w7LiLzXVAAI" frameborder="0" allowfullscreen></iframe>
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=CLHycQfLQ0c">
         </div>
       </div>
       <div style="flex: 1; min-width: 300px;">
-        <div style="flex: 0 0 200px; margin-bottom: 0.5rem;">
-          <span style="font-weight: 600; color: var(--text-dark);">Video</span>
-          <div style="font-size: 0.875rem; color: var(--text-light);">26 Jul 2025</div>
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--text-dark);">Video</span> • 7 Sept 2025
         </div>
-        <h2 class="text-2xl mb-2">Fix This! Biggest Problem - Recovery & Backup</h2>
-        <p class="mb-4" style="line-height: 1.6;">
-          How to fix common hard drive detection issues and set up backup strategies to keep your data safe.
-        </p>
-        <a href="https://youtu.be/w7LiLzXVAAI" target="_blank" class="text-primary font-bold">Watch Video on YT
-          &rarr;</a>
+        <h2 class="text-2xl mb-2">Unlimited Storage Using Google Drive in App</h2>
+        <p class="mb-4">Get unlimited storage for Python apps using Google Drive API.</p>
+        <a href="https://youtu.be/CLHycQfLQ0c" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 16. Jarvis Full Guide -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=l0rS4xuG_TE">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--secondary-color);">Jarvis Series</span> • 31 Aug 2025
+        </div>
+        <h2 class="text-2xl mb-2">How to Create a Full AI Like JARVIS</h2>
+        <p class="mb-4">Complete Tutorial with Source Code.</p>
+        <a href="https://youtu.be/l0rS4xuG_TE" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 17. Jarvis Part 5 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=5lHNOBgbECg">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--secondary-color);">Jarvis Series</span> • 17 Aug 2025
+        </div>
+        <h2 class="text-2xl mb-2">Part 5 | Creating Realtime Search Engine</h2>
+        <a href="https://youtu.be/5lHNOBgbECg" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 18. Jarvis Part 4 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=wyD1DhS-p04">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--secondary-color);">Jarvis Series</span> • 11 Aug 2025
+        </div>
+        <h2 class="text-2xl mb-2">Part 4 | Build 3rd File - Core Development</h2>
+        <a href="https://youtu.be/wyD1DhS-p04" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 19. Jarvis Part 3 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=6GZmW3WQtmo">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--secondary-color);">Jarvis Series</span> • 9 Aug 2025
+        </div>
+        <h2 class="text-2xl mb-2">Part 3 | Build Chatbot - The Brain</h2>
+        <a href="https://youtu.be/6GZmW3WQtmo" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 20. Jarvis Part 2 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=Xwt870cKjBM">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--secondary-color);">Jarvis Series</span> • 3 Aug 2025
+        </div>
+        <h2 class="text-2xl mb-2">Part 2 | Create Your FIRST Jarvis Code File!</h2>
+        <a href="https://youtu.be/Xwt870cKjBM" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 21. Jarvis Part 1 -->
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=hHsaGMibxyo">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--secondary-color);">Jarvis Series</span> • 2 Aug 2025
+        </div>
+        <h2 class="text-2xl mb-2">Part 1 | Installing VS Code Like a PRO</h2>
+        <p class="mb-4">Beginner Friendly guide to setting up your environment.</p>
+        <a href="https://youtu.be/hHsaGMibxyo" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 22. Fix This -->
+    <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem;">
+      <div style="flex: 1; min-width: 300px;">
+        <div class="video-container dynamic-video" data-video-url="https://www.youtube.com/watch?v=w7LiLzXVAAI">
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.875rem;">
+          <span style="font-weight: 700; color: var(--text-dark);">Video</span> • 26 Jul 2025
+        </div>
+        <h2 class="text-2xl mb-2">Fix This! Hard Drive Not Showing Issue</h2>
+        <p class="mb-4">How to fix common hard drive detection issues.</p>
+        <a href="https://youtu.be/w7LiLzXVAAI" target="_blank" class="text-primary font-bold"
+          style="font-size: 0.9rem;">Watch on YouTube &rarr;</a>
       </div>
     </div>
 
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container text-center">
-      <p>&copy; 2025 MSK Steps Learning. All rights reserved.<br>
-        <span style="font-size: 0.8rem; color: var(--text-light);">by MSK Wise Computers(MSK WComputers)</span>
-      </p>
-    </div>
-  </footer>
-
-  <!-- Global JS -->
-  <script src="../js/script.js"></script>
-
+  <!-- Ads -->
   <div class="container text-center mb-8">
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6t+ed+2i-1n-4w"
       data-ad-client="ca-pub-5036104597450648" data-ad-slot="9830376029"></ins>
@@ -249,6 +538,31 @@
       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 MSK Steps Learning. All rights reserved.<br>
+        <span style="font-size: 0.8rem; color: var(--text-light);">by MSK Wise Computers (MSK WComputers)</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Selection Modal -->
+  <div class="modal-overlay" id="selectionModal">
+    <div class="modal-content">
+      <h3 class="modal-title">Where do you want to secure this series?</h3>
+      <div class="modal-btn-group">
+        <button class="modal-btn website" id="modalWebsiteBtn">Open in Website 💻</button>
+        <div style="font-size: 0.9rem; color: #666;">- or -</div>
+        <button class="modal-btn youtube" id="modalYoutubeBtn">Open in YouTube 📺</button>
+      </div>
+      <button class="modal-close" onclick="closeSelectionModal()">Close</button>
+    </div>
+  </div>
+
+  <!-- Global JS -->
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
